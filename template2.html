@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .template-two-container {
+            background-image: url('https://s3-alpha-sig.figma.com/img/3ad0/c416/5f64608e04826b7d31a3997196575c41?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mP-wKEITIXYhWzG3f7SwRn-0uEGF8m52RDsmZ0LCKfpNQ8EWd7vK~BfV-zyDanSWK51sugKC59OPw4whJxeBtJ5pJNR7NFOvAiWwdOIhe1ewF3GuNLfXBB5AQtDivvbbqQ767Zw1fO0x-tUhsLBGBmV4fq~YvTJFS7ss63WA~SeEgjxQWWeZ9OV85ygQxnHH74IAreFHFuE0ebNzPfj06kKuf66FESF3BUeSLXBH3~ejl1QSxasodpL9SFGmfbsY672iDJoFhYM1jdPRRZu23aF5nPOPM1jqAK2jxFkvI4diJog-Y0SWl4-cSr0nksMrREcxAcUxv9fH71THFpJXoA__');
+            background-size: cover;
+            width: 600px;
+            height: 600px;
+        }
+        .detail-section{
+            background: #9a079fae;
+            height: 100%;
+            width: 100%;
+            margin-top: 0px;
+            overflow: hidden;
+        }
+        .flash-sale-container{
+            padding: 20px;
+            text-align: center;
+        }
+        .flash-container{
+            display: flex;
+            justify-content: center;
+            transform: rotate(5deg);
+            margin-left: 45px;
+
+        }
+        .paragraph-element{
+            margin-top: 0px;
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight: 800;
+            color: #FFFFFF;
+        }
+        
+        .flash-heading{
+            width: 430px;
+            height: 100px;
+            background: #FFFA0D;
+            color: #B907C0;
+            text-align: center;
+            margin: 0px;
+            font-size: 90px;
+            font-weight: 900;
+            margin-left: 10px;
+            padding-bottom: 10px;
+            font-family: 'Verdana';
+        }
+        .flash-star {
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff; 
+            clip-path: polygon(
+                50% 0%, 
+                62% 38%, 
+                100% 50%, 
+                62% 62%, 
+                50% 100%, 
+                38% 62%, 
+                0% 50%, 
+                38% 38% 
+            );
+            align-self: flex-end;
+            margin-left: 20px;
+        }
+
+        .sale-container{
+            display: flex;
+            transform: rotate(-2deg);
+        }
+
+        .sale-star {
+            width: 50px;
+            height: 50px;
+            background-color: white; 
+            clip-path: polygon(
+                50% 0%, 
+                62% 38%, 
+                100% 50%, 
+                62% 62%, 
+                50% 100%, 
+                38% 62%, 
+                0% 50%, 
+                38% 38% 
+            );
+            align-self: flex-start;
+            margin-right: 10px;
+            margin-top: 20px;
+            transform: rotate(60deg);
+
+        }
+        .sale-heading{
+            width: 400px;
+            height: 100px;
+            background: #FFFA0D;
+            font-family: 'Verdana';
+            color: #B907C0;
+            text-align: center;
+            margin: 0px;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 100px;
+        }
+
+
+        .container-description {
+            position: relative;
+            width: 600px;
+            height: 380px;
+            display: flex;
+
+            justify-content: space-between;
+            overflow: hidden;
+            padding: 0px 20px;
+            box-sizing: border-box;
+
+        }
+        .star-end {
+            align-self: center;
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-color: #FFFA0D; 
+            clip-path: polygon(
+                50% 0%, 
+                61% 35%, 
+                98% 35%, 
+                68% 57%, 
+                79% 91%, 
+                50% 70%, 
+                21% 91%, 
+                32% 57%, 
+                2% 35%, 
+                39% 35%
+            );
+            transform: rotate(30deg);
+            left: 0;
+            z-index: 1;
+            margin-top: 40px;
+            margin-left: 215px;
+        }
+
+        .text {
+            padding-top: 40px;
+            z-index: 2;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .image-container {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            width: 200px;
+            height: 280px;
+            overflow: hidden;
+
+        }
+
+        .image{
+            height: 300px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .persentage-text{
+            margin: 0;
+            font-size: 90px;
+            font-weight: 900;
+            width: 400px;
+            height: 90px;
+            font-family: 'Verdana';
+        }
+
+        .sample-web-container{
+            background-color: #FFFA0D;
+            height: 50px;
+            width: 280px;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .sample-web-container p{
+            font-size: 18px;
+            padding-top: 7px;
+            font-weight: 800;
+            line-height: 32px;
+            color: #B907C0;
+        }
+    </style>
+</head>
+<body>
+    <div class="template-two-container">
+        <div class="detail-section">
+            <div class="flash-sale-container">
+                <div class="flash-container">
+                    <div>
+                        <p class="paragraph-element">3 Days Only</p>
+                        <h1 class="flash-heading">FLASH</h1>
+                    </div>
+                    <div class="flash-star"></div>
+                </div>
+                <div class="sale-container">
+                    <div class="sale-star"></div>
+                    <h1 class="sale-heading">SALE</h1>
+                </div>
+                <div class="container-description">
+                    <div class="star-end"></div>
+                        <div class="text">
+                            <h2 class="persentage-text">45% </h2>
+                            <h2 class="persentage-text">OFF</h2>
+                            <div class="sample-web-container">
+                                <p>samplewebsite.com</p>
+                            </div>
+                        <div class="image-container"><img src="https://s3-alpha-sig.figma.com/img/8861/525b/eae8a337adcd846f61f332dce9932c3f?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SGqSZ9kI9gGX7rn8g4rtAzEYUQPQX~Hrcg76~-zlnBQYyRahSpSzVorgS4Cr06H2H5mcMh75K6hf1t9h~TX1CiDjKbV09elSaYKsonDt4ljzN59oeRwaOuwSwj74ja1K-Ii1VcmxJ7dWMnnDQiZ-i2ueGex-cpc1VqobXIJpG9SJe1L1cvYuDq~5nNyYsqk8SmRyjIqwL6o88ytqgYBrsm17nV3-SPeYamxBxizyYrqLnvHBpDJdz1G1pB6YISTyFyUhIAUBJZCZdVGuEnojAWbI29p~TA6Eq64qVAVb0io0tFj266qhJIEnEyU0AAPNmU9Koy5L74Syas~UKxJTqw__" class="image" alt="Sale Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
